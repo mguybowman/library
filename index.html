@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0, maximum-scale=1, user-scalable=0">
+</head>
+<body>
+<main>
+    <h1>Library</h1>
+    <nav>
+        <button id="new-book">New Book</button>
+        <div id="new-book-form">
+            <div class="row">
+                <label for="title">Title:</label>
+                <input id="title" name="title" type="text">
+            </div>
+            <div class="warning" id="warn-title">
+                Please enter a valid book title
+            </div>
+            <div class="row">
+                <label for="author">Author:</label>
+                <input id="author" name="author" type="text">
+            </div>
+            <div class="warning" id="warn-author">
+                Please enter a valid author name
+            </div>
+            <div class="row">
+                <label for="pages">Pages:</label>
+                <input id="pages" name="pages" type="number">
+                <span class="right-column">
+                    <label for="read">Finished reading:</label>
+                    <input id="read" name="read" type="checkbox">
+                </span>
+            </div>
+            <div class="warning" id="warn-pages">
+                Please enter a valid page count
+            </div>
+            <button id="add-book">Add to Library</button>
+            <button id="cancel">Cancel</button>
+        </div>
+    </nav>
+    <div id="shelf"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

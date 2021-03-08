@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    min-width: 320px;
+}
+
+main {
+    margin: 1vh auto 0 auto;
+    padding: 10px;
+    max-width: 480px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    weight: bold;
+    margin: 0 0 .5em 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+#new-book, #new-book-form {
+    margin: 0 auto 1em auto;
+}
+
+#new-book-form {
+    width: 300px;
+    display: none;
+}
+
+#new-book-form .row {
+    width: 100%;
+    display: flex;
+    margin-bottom: .5em;
+    position: relative;
+}
+
+#new-book-form label {
+    margin-right: .5em;
+    width: 46px;
+    text-align: left;
+}
+
+#title, #author {
+    flex: 1 0 auto;
+}
+
+#pages {
+    width: 64px;
+}
+
+.right-column {
+    position: absolute;
+    right: 0;
+}
+
+#read {
+    position: relative;
+    top: 2px;
+    margin: 0;
+}
+
+#new-book-form .warning {
+    margin-bottom: .5em;
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+#shelf {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+
+#shelf > div {
+    border: 1px dotted black;
+    border-radius: 4px;
+    padding: 1em;
+    position: relative;
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+#shelf > div p {
+    margin: 0;
+}
+
+.read-button, .remove-button {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    font-size: 1em;
+    color: #666;
+    border-bottom: 1px dotted #666;
+    outline: none;
+}
+
+.read-button:hover, .remove-button:hover {
+    color:tomato;
+    border-bottom: 1px dotted tomato;
+}
+
+.remove-button {
+    position: absolute;
+    right: 1em;
+}
