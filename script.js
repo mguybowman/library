@@ -17,16 +17,18 @@ cancelButton.addEventListener("click", hideNewBookForm)
 
 let myLibrary = [];
 
-function Book(title, author, pages, read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
-    this.info = function() {
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.read = read
+    }
+    info() {
         let hasRead = "has not read"
         if (this.read === true) {hasRead = "has read"}
         return (title + " by " + author + ", " + pages + " pages, " + hasRead)
-  }
+    }
 }
 
 function addBookToLibrary(title, author, pages, read) {
